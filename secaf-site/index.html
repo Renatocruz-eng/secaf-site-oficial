@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>SECAF - Consultoria para Agricultura Familiar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8">
+  <title>SECAF - Consultoria para Agricultura Familiar</title>
+  <meta name="description" content="Consultoria e assessoria técnica especializada para agricultores familiares. Projetos de crédito fundiário, crédito rural, assistência técnica e mais.">
+  <meta name="keywords" content="agricultura familiar, crédito fundiário, assistência técnica, projetos rurais, SECAF, Dourados MS, consultoria agro">
+  <meta name="author" content="Renato Ferreira da Cruz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Logo SECAF" class="logo">
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<div class="barra-topo">
+  <div class="data-atual" id="data-atual"></div>
+</div>
+
+<section class="hero-banner">
+  <img src="images/por-do-sol.png" alt="Banner" class="banner-img">
+  <div class="banner-texto">
+    <h1>Consultoria e Assessoria para Agricultura Familiar</h1>
+  </div>
+</section>
+
+<section class="boas-vindas">
+  <h1>Bem-vindo à SECAF</h1>
+  <p>Somos especialistas em Consultoria e Assessoria para Agricultura Familiar. Aqui você encontra soluções técnicas e estratégicas para o campo.</p>
+  <a href="servicos.html">Conheça nossos serviços</a>
+</section>
+
+<section class="info-agro-clima">
+  <div class="coluna-esquerda">
+    <h2>Preços Atualizados</h2>
+    <table class="tabela-precos">
+      <tr><td><strong>Dólar:</strong></td><td>R$ 5,63</td></tr>
+      <tr><td><strong>Soja:</strong></td><td>R$ 140,50</td></tr>
+      <tr><td><strong>Milho:</strong></td><td>R$ 82,30</td></tr>
+      <tr><td><strong>Boi Gordo:</strong></td><td>R$ 238,75</td></tr>
+      <tr><td><strong>Ovos:</strong></td><td>R$ 16,90 (30 unid)</td></tr>
+      <tr><td><strong>Frango:</strong></td><td>R$ 8,20/kg</td></tr>
+      <tr><td><strong>Leite:</strong></td><td>R$ 3,90/L</td></tr>
+    </table>
+  </div>
+
+  <div class="coluna-direita" id="clima-detalhado">
+    <h2>Clima Detalhado - Open-Meteo</h2>
+    <div id="info-clima-detalhado"><section id="clima">
+  <h2>Informações do Clima - Dourados/MS</h2>
+  <div class="clima-grid">
+    <div class="clima-item"><strong>Temperatura:</strong> <span id="temperature_2m">--</span> °C</div>
+    <div class="clima-item"><strong>Umidade Relativa:</strong> <span id="relative_humidity_2m">--</span> %</div>
+    <div class="clima-item"><strong>Temp. Solo (0cm):</strong> <span id="soil_temperature_0cm">--</span> °C</div>
+    <div class="clima-item"><strong>Umidade do Solo (0–1cm):</strong> <span id="soil_moisture_0_to_1cm">--</span></div>
+    <div class="clima-item"><strong>Evapotranspiração:</strong> <span id="evapotranspiration">--</span> mm</div>
+    <div class="clima-item"><strong>Evapo. FAO:</strong> <span id="et0_fao_evapotranspiration">--</span> mm</div>
+    <div class="clima-item"><strong>Velocidade do Vento:</strong> <span id="wind_speed_10m">--</span> km/h</div>
+    <div class="clima-item"><strong>Prob. de Chuva:</strong> <span id="precipitation_probability">--</span> %</div>
+    <div class="clima-item"><strong>Chuva:</strong> <span id="rain">--</span> mm</div>
+    <div class="clima-item"><strong>Índice UV:</strong> <span id="uv_index">--</span></div>
+    <div class="clima-item"><strong>Temp. Bulbo Úmido:</strong> <span id="wet_bulb_temperature_2m">--</span> °C</div>
+  </div>
+</section>
+</div>
+  </div>
+</section>
+
+<section id="noticias">
+  <h2>📰 Notícias sobre Agricultura e Agronegócio</h2>
+  <div id="feed-agro">carregando...</div>
+</section>
+
+
+<footer class="rodape">
+  <div class="rodape-container">
+    <div class="rodape-coluna">
+      <img src="images/logo.png" alt="Logo SECAF" class="rodape-logo">
+    </div>
+    <div class="rodape-coluna">
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div class="rodape-coluna">
+      <h4>Contato</h4>
+      <p><strong>WhatsApp:</strong> (67) 9 9615-0411</p>
+      <p><strong>Email:</strong> hawlysonac@gmail.com</p>
+      <p><strong>Endereço:</strong> Dourados - MS</p>
+    </div>
+ </div>
+    <div class="rodape-logos">
+    <img src="images/logo-crea.png" alt="CREA-MS">
+    <img src="images/logo-anater.png" alt="ANATER">
+    <img src="images/bid.png" alt="BID">
+    <img src="images/mda.jpeg" alt="MDA">
+    <img src="images/ater.png" alt="ATER">
+    <img src="images/incra.png" alt="INCRA">
+    <img src="images/dourados.png" alt="dourados">
+      </div>
+  <div class="rodape-baixo">
+    <p>© 2025 SECAF - Todos os direitos reservados.</p>
+    <p class="creditos-site">Site desenvolvido por <strong>Renato Ferreira da Cruz</strong></p>
+  </div>
+</footer>
+
+<script>
+  const diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+  const meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+  const hoje = new Date();
+  document.getElementById('data-atual').textContent = `${diasSemana[hoje.getDay()]}, ${hoje.getDate().toString().padStart(2, '0')} de ${meses[hoje.getMonth()]} de ${hoje.getFullYear()}`;
+
+  const climaDetalhadoURL = "https://api.open-meteo.com/v1/forecast?latitude=-22.2211&longitude=-54.8056&hourly=temperature_2m,relative_humidity_2m,soil_temperature_0cm,soil_moisture_0_to_1cm,evapotranspiration,et0_fao_evapotranspiration,wind_speed_10m,precipitation_probability,rain,uv_index,wet_bulb_temperature_2m";
+
+  fetch(climaDetalhadoURL)
+  .then(res => res.json())
+  .then(data => {
+    const horaAtual = new Date().getHours();
+
+    const atualizar = (id, campo) => {
+      const valor = data.hourly[campo] ? data.hourly[campo][horaAtual] : '--';
+      document.getElementById(id).innerText = valor !== undefined ? valor : '--';
+    };
+
+    atualizar("temperature_2m", "temperature_2m");
+    atualizar("relative_humidity_2m", "relative_humidity_2m");
+    atualizar("soil_temperature_0cm", "soil_temperature_0cm");
+    atualizar("soil_moisture_0_to_1cm", "soil_moisture_0_to_1cm");
+    atualizar("evapotranspiration", "evapotranspiration");
+    atualizar("et0_fao_evapotranspiration", "et0_fao_evapotranspiration");
+    atualizar("wind_speed_10m", "wind_speed_10m");
+    atualizar("precipitation_probability", "precipitation_probability");
+    atualizar("rain", "rain");
+    atualizar("uv_index", "uv_index");
+    atualizar("wet_bulb_temperature_2m", "wet_bulb_temperature_2m");
+  });
+   
+
+</script>
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5567996150411?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20SECAF." 
+   class="whatsapp-float" target="_blank">
+  <img src="images/whatsapp.png" alt="Fale conosco no WhatsApp" style="width:60px; height:60px;">
+</a>
+
+<!-- Botão flutuante do Instagram -->
+<a href="https://www.instagram.com/SEUUSUARIO" 
+   class="instagram-float" target="_blank">
+  <img src="images/instagram.png" alt="Nosso Instagram" style="width:60px; height:60px;">
+</a>
+<script>
+ axios.get("/api/rss")
+
+
+    .then(res => {
+      const noticias = res.data.items.slice(0, 3);
+      const container = document.getElementById("feed-agro");
+      container.innerHTML = "";
+
+      noticias.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "noticia-card";
+        div.innerHTML = `
+          <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+          <p>${item.description.slice(0, 100)}...</p>
+          ${item.thumbnail ? `<img src="${item.thumbnail}" alt="Imagem da notícia">` : ""}
+        `;
+        container.appendChild(div);
+      });
+    })
+    .catch(err => {
+      console.error("Erro ao buscar notícias:", err);
+      document.getElementById("feed-agro").innerHTML = "<p>Não foi possível carregar as notícias.</p>";
+    });
+</script>
+
+</body>
+</html>
